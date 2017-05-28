@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "6537419272",
+    "firebase_url": "https://happy-being.firebaseio.com",
+    "project_id": "happy-being",
+    "storage_bucket": "happy-being.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6537419272:android:04210bde428b5c50",
+        "android_client_info": {
+          "package_name": "com.azuyo.happybeing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6537419272-6lc3r84kotqhsgd9clo4hgom5j29u3ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLIUkKItHldPVUtqxGYkt6kqGKVvhVnNg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

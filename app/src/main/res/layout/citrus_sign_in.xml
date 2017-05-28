@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/edit_email_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        /><!--android:text="@string/dummy_email_hint"-->
+
+    <EditText
+        android:id="@+id/edit_mobile_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_email_id"
+        android:layout_margin="10dp"
+        android:hint="Enter mobile number"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/amount_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_email_id"
+        android:layout_margin="10dp"
+        android:hint="Enter mobile number"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Login" />
+
+
+</LinearLayout>

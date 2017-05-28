@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:background="@drawable/rounded_button"
+            android:layout_above="@id/adView"/>
+        <ScrollView
+            android:layout_above="@id/done_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.azuyo.happybeing.Utils.LineEditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:lineSpacingExtra="10dp"
+                    android:gravity="top|start"
+                    android:id="@+id/content_editext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minLines="18"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:hint="Enter notes"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/deletion_icon"
+            android:layout_centerInParent="true"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/delete_icon"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

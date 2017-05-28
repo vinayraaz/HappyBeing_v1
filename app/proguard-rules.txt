@@ -1,0 +1,50 @@
+# don't process support library
+# Hide warnings about references to newer platforms in the library
+-dontwarn android.support.**
+-keep class android.support.v4.** { *; }
+-keep interface android.support.v4.** { *; }
+-keep class android.support.v7.** { *; }
+-keep interface android.support.v7.** { *; }
+
+#To maintain custom components names that are used on layouts XML:
+-keep public class * extends android.view.View {
+    public <init>(android.content.Context);
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+    public void set*(...);
+}
+
+#To keep parcelable classes (to serialize - deserialize objects to sent through Intents)
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+##### Citrus Core SDK Config starts here....#########
+-keep class com.citrus.** { *; }
+-keep class com.citruspay.citrusbrowser.** { *; }
+-keep class com.google.** { *; }
+-keep class com.zl.reik.** { *; }
+-keepattributes *Annotation*
+###############   END ....###########################
+
+############################# Begin: proguard configuration for Gson  ##########################
+# Gson uses generic type information stored in a class file when working with fields. Proguard
+# removes such information by default, so configure it to keep all of it.
+-keepattributes Signature
+
+# For using GSON @Expose annotation
+-keepattributes *Annotation*
+
+# Gson specific classes
+-keep class com.google.gson.stream.** { *; }
+-keep class com.google.** {*;}
+
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.google.gson.examples.android.model.** { *; }
+
+# Prevent proguard from stripping interface information from TypeAdapterFactory,
+# JsonSerializer, JsonDeserializer instances (so they can be used in @JsonAdapter)
+-keep class * implements com.google.gson.TypeAdapterFactory
+-keep class * implements com.google.gson.JsonSerializer
+-keep class * implements com.google.gson.JsonDeserializer
+############################# End: proguard configuration for Gson  ############################

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="gridview" />
+    <item type="id" name="webview" />
+    <item type="id" name="scrollview" />
+    <item type="id" name="done">false</item>
+    <item type="id" name="cancel">false</item>
+    <item type="id" name="date_picker_header">false</item>
+    <item type="id" name="day_picker_selected_date_layout">false</item>
+    <item type="id" name="date_picker_month_and_day">false</item>
+    <item type="id" name="date_picker_month">false</item>
+    <item type="id" name="date_picker_day">false</item>
+    <item type="id" name="date_picker_year">false</item>
+    <item type="id" name="animator">false</item>
+    <item type="id" name="month_text_view">false</item>
+
+    <item type="id" name="base_id_cale">4</item>
+    <item type="id" name="prev_cal">1</item>
+    <item type="id" name="month_cal">2</item>
+    <item type="id" name="next_cal">3</item>
+
+
+
+</resources>

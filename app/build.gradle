@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    lintOptions {
+        // set to true to turn off analysis progress reporting by lint
+        quiet true
+        // if true, stop the gradle build if errors are found
+        abortOnError false
+        // if true, only report errors
+        ignoreWarnings true
+    }
+    defaultConfig {
+        applicationId "com.azuyo.happybeing"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 222
+        versionName "3.7"
+        multiDexEnabled true
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+    signingConfigs {
+        release {
+            storeFile file("C:\\Code\\Happy being\\happybeing")
+            storePassword "happybeing"
+            keyAlias "happybeing"
+            keyPassword "happybeing"
+            v2SigningEnabled false
+        }
+    }
+    buildTypes {
+        /*debug {
+            debuggable false
+        }*/
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'C:\\Code\\Happy being\\app\\proguard-rules.txt'
+            signingConfig signingConfigs.release
+            zipAlignEnabled true
+        }
+    }
+    /*productFlavors {
+        free {
+            applicationId 'com.azuyo.happybeingtest.free'
+        }
+        paid {
+            applicationId 'com.azuyo.happybeingtest.paid'
+        }
+    }*/
+    productFlavors {
+    }
+}
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile('com.citruspay.sdk:plug-n-play-sdk:2.0.1') {
+        transitive = true;
+        exclude module: 'payment-sdk'
+    }
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+        transitive = true;
+    }
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.google.firebase:firebase-ads:10.2.0'
+    compile 'com.google.android.gms:play-services:10.2.0'
+    compile 'com.github.channguyen:rsv:1.0.1'
+    compile 'com.azoft.carousellayoutmanager:carousel:1.2.1'
+    compile 'com.google.firebase:firebase-core:10.2.0'
+    compile 'com.google.firebase:firebase-storage:10.2.0'
+    compile 'com.google.firebase:firebase-auth:10.2.0'
+    compile 'com.citruspay.sdk:payment-sdk:4.1.6'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.firebaseui:firebase-ui-auth:1.2.0'
+    compile 'com.googlecode.libphonenumber:libphonenumber:7.1.1'
+
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script type="text/javascript" src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript">
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		title:{
+			text: "My Feelings"
+		},
+		legend: {
+			maxWidth: 350,
+			itemWidth: 120
+		},
+		data: [
+		{
+          	startAngle: 90,
+			type: "pie",
+			showInLegend: true,
+			legendText: "{indexLabel}",
+			dataPoints: [
+                { y: Android.getNum1(), legendText:"Love-"+Math.floor((Android.getNum1()*100)/(Android.getNum1()+Android.getNum2()+Android.getNum3()+Android.getNum4()+Android.getNum5()+Android.getNum6()))+"%", indexLabel: "",color:"red" },
+				{ y: Android.getNum2(), legendText:"Joy-"+Math.floor((Android.getNum2()*100)/(Android.getNum1()+Android.getNum2()+Android.getNum3()+Android.getNum4()+Android.getNum5()+Android.getNum6()))+"%", indexLabel: "",color:"red" },
+				{ y: Android.getNum3(), legendText:"Surprise-"+Math.floor((Android.getNum3()*100)/(Android.getNum1()+Android.getNum2()+Android.getNum3()+Android.getNum4()+Android.getNum5()+Android.getNum6()))+"%", indexLabel: "",color:"red" },
+				{ y: Android.getNum4(), legendText:"Anger-"+Math.floor((Android.getNum4()*100)/(Android.getNum1()+Android.getNum2()+Android.getNum3()+Android.getNum4()+Android.getNum5()+Android.getNum6()))+"%", indexLabel: "", color:"black"},
+				{ y: Android.getNum5(), legendText:"Sad-"+Math.floor((Android.getNum5()*100)/(Android.getNum1()+Android.getNum2()+Android.getNum3()+Android.getNum4()+Android.getNum5()+Android.getNum6()))+"%", indexLabel: "", color:"black" },
+				{ y: Android.getNum6(), legendText:"Fear-"+Math.floor((Android.getNum6()*100)/(Android.getNum1()+Android.getNum2()+Android.getNum3()+Android.getNum4()+Android.getNum5()+Android.getNum6()))+"%", indexLabel: "", color:"black"}
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
+    <script type="text/javascript" src="/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+</body>
+</html>

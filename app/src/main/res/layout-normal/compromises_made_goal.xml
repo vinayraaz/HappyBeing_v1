@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/done_layout"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:textSize="18sp"
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:text="Next"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/next_black_icon"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_above="@id/done_layout"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#f0f0f0"/>
+
+    <ScrollView
+        android:layout_above="@id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Specify the compromises or what you will give in return to achieve this goal."
+                android:textColor="@color/app_orange"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:gravity="top"
+                android:minLines="8"
+                android:hint="List here"
+                android:id="@+id/content_editext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

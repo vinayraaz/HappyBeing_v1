@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/knowledge_hub_parent_layout"
+        android:layout_weight="@integer/int_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/knowledge_hub_background">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Knowledge hub"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/play_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/play_button"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/download_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/download"/>
+
+        <com.azuyo.happybeing.Views.SmartAudioPlayer
+            android:layout_alignParentBottom="true"
+            android:id="@+id/smartAudioPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.azuyo.happybeing.Views.SmartAudioPlayer>
+
+    </RelativeLayout>
+
+    <!--
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/dayOneLayout"
+                    android:layout_margin="@dimen/dimen_10_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lets understand what are Negative core beliefs and how they influence on you achieving your goals. "/>
+                    <TextView
+                        android:layout_margin="@dimen/dimen_10_dp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Negative Core Beliefs develop as a small child tries to work out a because to help them cope with something they just couldn't understand or were troubled by in their daily life. It might be neglect, injustice, dishonest parenting, parents with addictions, bullying, more serious abuse or just regular feelings of vulnerability, fear or shame."/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Whatever it is the child feels the need for: "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. A because that will help them make sense of and accept what is happening to them "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 2. A because that will help them fit in better in their family or at school"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The trouble is that the only because that seems to work (at that time) is a belief Because I am not good enough I  am ...(Negative core belief) ... so it must be my fault, not theirs. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" If believing this helps the child fit in and make sense of things that are happening to them, then this because belief appears to be working. So it gets reinforced every day and the more it seems to work the more it seems as though it must be true.Eventually, resulting in negative core-belief."/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Here are the negative core beliefs that may act as blocks and barriers for you to attain your educational and career goals."/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Helplessness/Powerlessness/I am wrong and I am unsure "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Helplessness or powerlessness beliefs generally result in people assuming they lack control and cannot handle anything effectively or independently."/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I am wrong and I am unsure beliefs generally result in people assuming they are not good enough and hence assume they do wrong things or can’t take right decisions. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  Some common thoughts reflecting these negative core beliefs include:"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I’m incompetent "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I am not any good"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I am not good enough"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I’m helpless/powerless"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I am inferior"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I’m weak"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I will fail"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I’m vulnerable"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Poor me"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  I’m ineffective"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I do not meet expectations of others"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I’m unsuccessful"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I can’t achieve"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I can’t change"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I can’t handle anything"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" There’s no way out for me"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I can’t do it "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I’m always number two"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I finish last"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I can’t stand up for myself"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I’m a loser"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I can’t say ‘no’"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I don’t know"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I always get it wrong "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" I am always wrong"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I am confused "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I can’t understand "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I can’t be sure "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" When we look into the Linked issues with this negative belief - "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Individuals who believe they are helpless or powerless or not good enough, often face difficulties making changes or making choices"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Hence, often have issues with Performance, Achievement  and Self-esteem.  "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" They have trouble setting Boundaries, maintaining standards or quality, Having Success; setting goals, Getting good grades or results, being organised, self-esteem and  often fail to protect themselves from others verbal assaults."/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" These core beliefs and/or resulting thought patterns are not true; they are merely decisions made during childhood or some  unfavourable situations or a life event for survival. But it often gets so deep rooted that people believe them so strongly by default that they cannot see a possibility to challenge their version of belief."/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="While negative thoughts patterns and core beliefs may be difficult to challenge, many techniques exist that allow change to be possible. Recognizing such beliefs can be an excellent first step. "/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/day_two_layout"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/dimen_10_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/daytwoLayout"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Lets understand the what stops you from achieving your goals:"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" When you set a goal, you want to achieve them. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Couple of them, no matter how challenging they may seem in general, your attitude towards the goal is very positive..with” I CAN “ attitude… It feels like someone inside you is constantly encouraging and  you easily take actions that enables to make progress consistently irrespective of situations or circumstances… "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Few of the goals, how many ever times and different ways you define, plan and set the goal..how desperately  want to achieve the goal, it takes everything in you to work on it. You promise yourself every single time to act on it but when the time comes, you feel it’s quite a task and not have the will to act upon. The little voice in your head seems to come up with innovative appropriate excuses to support your thoughts of avoidance. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="You sometimes start with a bang..and after a while..fizzle out….After a few failed attempts, you start to give up and think you  can never achieve the goal. If given a magic wand and you would definitely want this goal to be achieved somehow…  "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" And at the core of this failure to take action is a fear or belief that is holding you back. Your beliefs determine not only if but how you - take action."/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Many of the beliefs are formed usually from childhood and through the experience of significant life events or particular life circumstances. We take actions based on beliefs. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1.Influence your perceptions – the way you notice and understand things that are not obvious "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2.Define for you what is good, bad, true, real and possible "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3.Direct your perspective in positive or negative ways"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 4.Direct and/or limit the actions you take"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 5.Shape your character"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 6.Affect your relationships"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 7.Establish a specific course you will follow"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8.Determine your health "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 9.Harness or hijack your passion"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 10.sLower or raise your level of happiness"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  Positive beliefs are likely to encourage attitude and actions that attract positive outcomes – that’s achieving  your stated goals. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="When your beliefs are negative, they are likely to encourage attitudes and actions or inactions in this case ; that run against your desires or stated goals. These belief becomes so deep rooted within the subconscious that it appears to be normal, natural and real to act upon  according to the belief and hard to find the limiting belief. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" And that explains the resistance and inability to take actions in certain areas, inspite of best efforts and intentions.."/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Good news is that  you can change this reality and achieve any desires or goals. All you need to do is consciously identify the core belief behind an inability,  get present to the situation that gave birth to the assumption if you can and consciously let go. Consciously replace the belief with an empowering positive belief. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Every time you work on the goal, and someone inside you makes excuses, STOP. Challenge the excuse and re-affirm the new positive belief. And act as if your new positive belief is true. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Taking action, even the smallest step, will help solidify your new belief. Your first steps don’t have to be perfect, just ensure you are heading in the right direction. And be sure to acknowledge yourself when you’ve taken that step."/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="After forcing yourself to take action in according to the new belief, your subconscious mind starts registering the new positive belief as if, it is  the new reality in this particular area and encourage you build new attitude and actions that unleash your true potential in achieving stated goals naturally. Areas you excel or feel easy to achieve any goal set simply implies your core belief in that area is positive. "/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/day_3_layout"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/dimen_10_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/daythreestart"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lets understand the strategies and techniques that will help you manage your time that you have effectively for maximum best outcomes. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="We will look into  the best techniques for Study time "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Study Time"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. Study boring things first. The subjects that you find difficult take more energy than those that you enjoy. Therefore, set aside the subjects that you enjoy most, for later. Get up early if you have to in order to study difficult subjects. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2. Best time of day. Many people are more productive during daytime. If this is the case, do difficult subjects during the day. Others are more productive at night. Be aware of your best time of day, and use it to your advantage. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Preferably study same subject at the same time. Your mind can become trained to get into the mood to study the subject within 10 minutes. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. Study area. Use a regular study area. Your body can become trained to a particular place, dayafter-day. You will be able to focus your attention more quickly in that particular place. Don‟t study in bed! Your body recognizes this as a place to sleep, not study. Study where you will be alert. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Libraries are a good place to study. They have low noise levels. Materials are available.Many people can get more done in shorter a time at the library. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4. Pay attention to your attention. Your own thoughts can often interrupt your concentration.
+    When that happens, notice the thoughts, and let them go. If thoughts of getting others things done
+    are distracting you, then handling that now and studying later is an option. You might also try
+    making a note, or scheduling a time to do it. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5. Roommates and study time. Make agreements with your roommates about study time. Make the rules clear, and follow them. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6. Phones. Phones are the ultimate distraction. People can call and interrupt when they dont
+    realize that you are studying. If a simple I cant talk, Im studying doesn't work, use dead
+    silence; it is a conversation killer. Turning your phone off may be the simplest and most effective
+    solution. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7. Saying “no”. Saying no is a time saver and a valuable life skill. Most people will understand
+    that you can't do what they ask because you are busy educating yourself. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8. Get ready the night before. Prepare for the next day before you go to bed. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="9. Avoid noise distractions. Turning off the TV might promote concentration. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Now let’s learn how to do the Scheduling, Planning, and Goal Setting "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. Make a “not-to-do” list. Include things that are just a waste of your time. By doing this you can
+    weed out worthless activities and add ones that matter. Eliminate activities with a low payoff. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2. Use a weekly/daily planner. Write down assignments and other appointments. Tests, due dates, etc. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. If you are part of, or plan on becoming part of a campus organization, then decide up front how
+    many hours a week you can devote to it. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Now let’s learn how to deal with Procrastination "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="There are many reasons for procrastinating. How many of these describe you? "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• You are overwhelmed by too many things to do, and you know that you can't get them all done. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• You don't think that you have the skills or knowledge to handle the task. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• You are not clear about what is expected. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• The task seems irrelevant; it has no meaning for you. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• You are not interested in the task. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• You are afraid of getting a low grade, or failing. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• You give yourself unreachable goals &#45;&#45; you are a perfectionist. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• You have problems outside of school that you are having trouble dealing with. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Solutions? "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. Set priorities. Pick one subject and focus on it. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2. Break the task down. Start early enough that you can do it in parts. You don’t have to do the
+    whole thing at once. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. Set small specific goals. You can break down the total portions into smaller portions according to the time available and by few weeks you can master the total subject. For example - I can find the research today. I can write half of my draft tomorrow,
+    and the second half the next day. In two weeks time, I can have the paper finished and ready to
+    turn in. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4. Focus on one step at a time. Don't think about how much you have to get done, or that there
+    isn't enough time to do it all. Figure out what the next step is and focus on completing it, and the
+    move to the next. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5. Reward yourself. After studying for two hours, take a break. Take 20 minutes to relax your mind completely. Play a game..check updates..eat something..go for a walk ..call a friend..do something apart from studying and get back to study strictly after 20 mins. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6. Use a schedule. Write down in your planner what time/day during the week you can devote to a
+    paper, exam, studying for a test, etc. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7. Optimize your chances for success. You might tell yourself that you will get your studying or
+    Preparation on  a subject at home over the weekend. Maybe, try studying throughout the week in your campus or at home or in a library. Wherever you are more likely to get things done. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8. Ask for help. Sometimes asking for help is necessary when you can't do everything yourself. "/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="9. JUST GET STARTED!!! Even when you do not feel motivated or inspired to do a task, just get
+    started. Actually starting something is vital."/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10. Be realistic. You can only take on so much, so set limits. You can't do everything. "/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+    -->
+</RelativeLayout>

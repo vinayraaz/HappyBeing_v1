@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/done_layout"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:textSize="18sp"
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:text="Next"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/next_black_icon"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_above="@id/done_layout"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#f0f0f0"/>
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:layout_above="@id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Break down the goal into small tasks. Start with new skills or knowledge you need to gain for the same. To begin with list tasks that are visible and in your control."
+                android:textColor="@color/app_orange"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:id="@+id/edit_texts_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:hint="Task 1"
+                        android:gravity="start"
+                        android:background="@drawable/edit_text"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:hint="Task 2"
+                        android:gravity="start"
+                        android:background="@drawable/edit_text"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="start"
+                        android:textColor="@color/black"
+                        android:hint="Task 3"
+                        android:background="@drawable/edit_text"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:hint="Task 4"
+                        android:gravity="start"
+                        android:background="@drawable/edit_text"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:hint="Task 5"
+                        android:gravity="start"
+                        android:background="@drawable/edit_text"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/plus_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/darker_gray"
+                android:background="@drawable/plus"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

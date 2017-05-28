@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:layout_margin="@dimen/dimen_20_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/black"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/app_blue"/>
+        <EditText
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textEmailAddress"
+            android:gravity="start"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:backgroundTint="@color/app_blue"/>
+
+        <EditText
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dimen_10_dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:id="@+id/on_screen_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="On screen name"
+            android:inputType="textPersonName"
+            android:gravity="start"
+            android:backgroundTint="@color/app_blue"/>
+        <Spinner
+            android:id="@+id/countrySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="0sp"
+            android:background="#00000000"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="40dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearlayout4"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/countryCodeTexview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:text="+91"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="#00000000"
+                android:ellipsize="start"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"/>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/viewline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/linearlayout4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:background="@color/app_blue" />
+
+
+        <EditText
+            android:layout_marginTop="@dimen/dimen_10_dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email id"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/app_blue"
+            android:gravity="start" />
+        <EditText
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/app_blue"
+            android:gravity="start" />
+
+        <Button
+            android:layout_margin="@dimen/dimen_15dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_orange"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_22sp"
+            android:text="Sign up"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/goto_sign_in_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already nSmiles member?"
+                android:textColor="@color/app_blue"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+</RelativeLayout>

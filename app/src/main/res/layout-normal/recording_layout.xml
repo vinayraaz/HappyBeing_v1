@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recorder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/recorder_record_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/recorder_record_button"
+            android:padding="5dp"
+            android:textSize="14dp"
+            android:textOff=""
+            android:textOn=""
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <com.azuyo.happybeing.Views.SmartAudioPlayer
+            android:gravity="center_vertical"
+            android:id="@+id/recorder_smart_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.azuyo.happybeing.Views.SmartAudioPlayer>
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="16dp"
+        android:id="@+id/timerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
+
+
+</LinearLayout>

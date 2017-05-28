@@ -1,0 +1,105 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Happy Being</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">Get Started</string>
+    <string name="start">Get Started</string>
+    <string name="facebook_app_id">1118595971569189</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb1118595971569189</string>
+
+    <!--<string name="facebook_app_id">1118595971569189</string>-->
+
+    <string name="banner_ad_unit_id">ca-app-pub-7447665870261345/8208699199</string>
+    <!--
+    <string name="banner_ad_unit_id">ca-app-pub-7447665870261345~2301766396</string>
+-->
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <string name="chooser_title">Complete your action using</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_self_assessment">SelfAssessment</string>
+    <string name="title_activity_stress_buster">StressBuster</string>
+    <string name="title_activity_experience_growth">ExperienceGrowth</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_express_gratitude">ExpressGratitude</string>
+    <string name="title_activity_joy">Joy</string>
+    <string name="title_activity_anger">Anger</string>
+    <string name="title_activity_surprise">Surprise</string>
+    <string name="title_activity_fear">Fear</string>
+    <string name="title_activity_love">Love</string>
+    <string name="title_activity_sad">Sad</string>
+    <string name="title_activity_analyse_screen">AnalyseScreen</string>
+    <string name="title_activity_anger_display">Anger_display</string>
+    <string name="title_activity_display_anger">DisplayAnger</string>
+    <string name="title_activity_display_sad">DisplaySad</string>
+    <string name="title_activity_display_surprise">DisplaySurprise</string>
+    <string name="title_activity_display_love">DisplayLove</string>
+    <string name="title_activity_display_joy">DisplayJoy</string>
+    <string name="title_activity_display_fear">DisplayFear</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_express_gratitude1">ExpressGratitude1</string>
+    <string name="title_activity_relaxation">Relaxation</string>
+    <string name="title_activity_signup_page">SignupPage</string>
+    <string name="title_activity_signin_page">SigninPage</string>
+    <string name="title_activity_sea_shore">SeaShore</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_main4">Main4Activity</string>
+    <string name="title_activity_love1">Love1</string>
+    <string name="title_activity_gratitude_diary">GratitudeDiary</string>
+    <string name="title_activity_nature_calms">NatureCalms</string>
+    <string name="title_activity_positivity">Positivity</string>
+    <string name="title_activity_my_music">MyMusic</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_signup_page1">SignupPage1</string>
+    <string name="title_activity_sigin_page">SiginPage</string>
+    <string name="player_timeleft">0:00</string>
+    <string name="trackingId">UA-46219980-1</string>
+
+    <string name="item_is_selected">%1$s selected</string>
+    <string name="hour_picker_description">Hours circular slider</string>
+    <string name="minute_picker_description">Minutes circular slider</string>
+    <string name="radial_numbers_typeface" translatable="false">sans-serif</string>
+    <string name="select_hours">Select hours</string>
+    <string name="select_minutes">Select minutes</string>
+    <string name="done_label">Done</string>
+    <string name="day_picker_description">Month grid of days</string>
+    <string name="year_picker_description">Year list</string>
+    <string name="select_day">Select month and day</string>
+    <string name="select_year">Select year</string>
+    <string name="sans_serif" translatable="false">sans-serif</string>
+    <string name="day_of_week_label_typeface" translatable="false">sans-serif</string>
+    <string name="deleted_key"><xliff:g example="4" id="key">%1$s</xliff:g> deleted</string>
+    <string name="time_placeholder" translatable="false">--</string>
+    <string name="time_separator" translatable="false">:</string>
+
+<!--new String-->
+    <string name="relax_relieve">Helps you calm in 5 minutes when you are feeling negative, low, angry, frustrated or stressed.</string>
+    <string name="access">Questionnaires to know yourself better, measure your progress and grow.</string>
+    <string name="coach">Personalised workouts to help you more productive, energetic and happy.</string>
+    <string name="goals">Mind tool to stay on track to achieve the goals that are most important to you</string>
+    <string name="moments">Guided gratitude steps to help you Reap the many benefits of positive thinking.</string>
+
+    <string name="help_string">Allow your mind to move beyond your tidy, everyday thoughts - even if it’s totally random, even if it hurts. Write your deepest thoughts and emotions. Write about the event, situation, the memories attached if any or distress you are feeling. Try bringing your raw feelings to the surface. Notice at the end if you can get present to the actual reason on why you really feel the way you do.</string>
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="26sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="#FF5722"
+        android:text="Relax and relieve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relax your mind"
+                android:textSize="@dimen/dimen_20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <ListView
+                android:id="@+id/relaxListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relax your body"
+                android:textSize="@dimen/dimen_20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <ListView
+                android:id="@+id/relaxbyBodyListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Take a timeout"
+                android:textSize="@dimen/dimen_20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <ListView
+                android:id="@+id/takeTimeOutListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Express and entertain"
+                android:textSize="@dimen/dimen_20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <ListView
+                android:id="@+id/expressListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nourish your body and senses"
+                android:textSize="@dimen/dimen_20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <ListView
+                android:id="@+id/nourishListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

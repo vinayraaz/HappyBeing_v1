@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/relativelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/instant_relief_background">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/thirdcard_titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Relax and relieve instantly"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:layout_marginLeft="@dimen/dimen_40dp"
+            android:id="@+id/thirdcard_sub_titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destress and feel positive in 5 minutes"
+            android:textSize="@dimen/dimen_20sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_below="@+id/firstcard_titleText"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/image_view"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

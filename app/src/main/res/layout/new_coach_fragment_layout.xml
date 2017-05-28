@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ocean_waves"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:text="My Coach"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_80dp"
+            android:gravity="center"
+            android:text="@string/coach"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <RadioButton
+                android:id="@+id/rd_try_conceive"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:text="Trying to conceive"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:theme="@style/MyRadioButton"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rd_pregnant"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:text="Pregnant"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:theme="@style/MyRadioButton"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rd_caregiver"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:text="Caregiver"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:theme="@style/MyRadioButton"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rd_depression"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:text="Going through Depression, anxiety or any other mood disorder"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:theme="@style/MyRadioButton"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rd_chronicpain"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:text="Chronic pain/illness"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:theme="@style/MyRadioButton"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/rd_none"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:text="None of the above"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:theme="@style/MyRadioButton"
+                android:visibility="gone" />
+
+        </RadioGroup>
+
+    </ScrollView>
+</LinearLayout>

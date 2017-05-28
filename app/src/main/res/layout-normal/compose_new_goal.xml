@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+    <LinearLayout
+        android:layout_below="@id/tool_bar"
+        android:layout_above="@id/adView"
+        android:id="@+id/fitst_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consider choosing a goal that is most important to you now"
+            android:textSize="18sp"
+            android:textColor="@color/app_orange"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/health_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/health1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="Being more relaxed"/>
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/health2"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="Drinking less coffee or tea"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/health3"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="losing weight"/>
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/health4"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="learning deep relaxation techniques"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/health5"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="drinking less alcohol"/>
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/health6"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="consuming less cigarettes"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/health7"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="manage pain better"/>
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/health8"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="getting better sleep"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/health9"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="getting massages"/>
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/health10"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="meeting specific health needs"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/health11"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="getting more fit"/>
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/health12"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="eating less junk"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/health13"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="run a marathon"/>
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/health14"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="going for a trek"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/health15"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="build strength"/>
+                    <Button
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/health16"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:textAllCaps="false"
+                        android:text="boost immunity"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/custom_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/blue_rounded_button"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:text="I have another goal in mind"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:id="@+id/custom_goal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Give a title to you goal making it as simple, clear and self-motivating as you can"/>
+
+            <EditText
+                android:layout_margin="10dp"
+                android:id="@+id/custom_title_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter title"
+                android:background="@android:drawable/editbox_background_normal"
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/custom_text_done"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_button"
+                android:textAllCaps="false"
+                android:text="Done"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/goal_screen_fragment"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tool_bar"
+        android:layout_above="@id/adView"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

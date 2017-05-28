@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/complete_layout"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:id="@+id/next_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/next_black_icon"/>
+        <TextView
+            android:layout_marginLeft="@dimen/dimen_20_dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/next_icon"
+            android:id="@+id/option_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Title"
+            android:maxLines="2"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

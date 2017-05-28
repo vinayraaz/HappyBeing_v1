@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/relativelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/app_grey"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_above="@+id/smiles_layout"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#d8d8d8"/>
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_above="@id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/dimen_10dp"
+            android:layout_margin="@dimen/dimen_5dp">
+            <RelativeLayout
+                android:id="@+id/destress_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mind_gym"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/thirdcard_titleText"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mind gym"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:id="@+id/thirdcard_sub_titleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reduce stress and boost performance"
+                        android:textSize="@dimen/dimen_18sp"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/firstcard_titleText"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/dimen_10dp"
+            android:layout_margin="@dimen/dimen_5dp">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/goals_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/relax_refresh_and_rejuvenate"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/title_text"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mind gym"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:id="@+id/firstcard_sub_titleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reduce stress and boost performance"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/workoutType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        android:text="Today's workout"/>
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/todayWorkoutName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="Today's workout"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/dimen_10dp"
+            android:layout_margin="@dimen/dimen_5dp">
+            <RelativeLayout
+                android:id="@+id/wellness_measure_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/goals"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/secondcard_titleText"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mind gym"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:id="@+id/secondcard_sub_titleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reduce stress and boost performance"
+                        android:textSize="@dimen/dimen_18sp"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/firstcard_titleText"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/help_layout"
+        android:layout_above="@id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+        <ImageView
+            android:id="@+id/close_button"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:background="@drawable/close_white"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dp"/>
+
+        <ScrollView
+            android:layout_below="@id/close_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mental strengthening"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_marginTop="@dimen/dimen_10_dp"
+                    android:id="@+id/mentalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mental strengthening"
+                    android:textSize="@dimen/dimen_18sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Goals"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_marginTop="@dimen/dimen_10_dp"
+                    android:id="@+id/goalsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mental strengthening"
+                    android:textSize="@dimen/dimen_18sp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Relax and Relieve"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_marginTop="@dimen/dimen_10_dp"
+                    android:id="@+id/relaxText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mental strengthening"
+                    android:textSize="@dimen/dimen_18sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/smiles_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="@integer/int_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:background="@drawable/profile"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="@integer/int_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/assessments_image"
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:background="@drawable/assessments"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="@integer/int_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/feeling_capture_image"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:background="@drawable/add_happy_moment"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="@integer/int_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/gratitude_image"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:background="@drawable/add_gratitude"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="@integer/int_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/help_image"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:background="@drawable/info"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

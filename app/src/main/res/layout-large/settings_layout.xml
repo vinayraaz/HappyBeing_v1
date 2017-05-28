@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linear_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#f7f7f7"
+            android:minHeight="50dp">
+            <TextView
+                android:id="@+id/back_button"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".1"
+                android:paddingLeft="@dimen/dimen_5dp"
+                android:gravity="center"
+                android:backgroundTint="@color/colorAccent"
+                android:background="@drawable/back_arrow"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="match_parent"
+
+
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Settings"
+                android:textColor="#FF5722"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/saveText"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="Save"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_18sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10_dp"
+            android:text="Daily gym"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workout time:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/daily_gym_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10_dp"
+                android:text="6:00 AM"
+                android:textColor="@color/app_blue"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Before bed time:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/daily_gym_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10_dp"
+                android:text="6:00 AM"
+                android:textColor="@color/app_blue"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="5dp"
+            android:background="@color/app_grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10_dp"
+            android:text="Relax and relieve"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twice a day between "
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/relax_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:text="6:00 AM"
+                    android:textColor="@color/app_blue"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:text=" to "
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/relax_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:text="6:00 AM"
+                    android:textColor="@color/app_blue"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="5dp"
+            android:background="@color/app_grey" />
+
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_marginRight="@dimen/dimen_10_dp"
+            android:background="@drawable/rounded_button"
+            android:text="Sign out"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="5dp"
+            android:background="@color/app_grey"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+    <!--SIGN UP SIGN IN BUTTON-->
+    <LinearLayout
+        android:id="@+id/linear_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:visibility="gone"
+            android:text=" Get access to all our awesome content."
+            android:textSize="@dimen/dimen_14sp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_orange"
+            android:minHeight="50dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2_dp"
+                android:layout_weight=".5"
+                android:background="@color/white"
+                android:text="Sign in"
+                android:textColor="@color/app_orange"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <Button
+                android:id="@+id/sign_up_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="@color/app_orange"
+                android:text="Sign up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--PREMIUM-->
+    <LinearLayout
+        android:id="@+id/linear_third"
+        android:layout_below="@+id/linear_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <Button
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="@dimen/dimen_10_dp"
+            android:paddingRight="@dimen/dimen_10_dp"
+            android:background="@color/app_orange"
+            android:id="@+id/buy_now"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET PREMIUM ACCESS"/>
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+</RelativeLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textColor="#FF5722"
+                    android:textSize="26sp"
+                    android:background="#f7f7f7"/>
+
+                <TextView
+                    android:id="@+id/saveText"
+                    android:layout_margin="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daily gym"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_25sp" />
+            <LinearLayout
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Workout time:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/daily_gym_start_time"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6:00 AM"
+                    android:textColor="@color/app_blue"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Before bed time:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/daily_gym_end_time"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6:00 AM"
+                    android:textColor="@color/app_blue"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/app_grey"/>
+            <TextView
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relax and relieve"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_25sp" />
+
+            <LinearLayout
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Twice a day between "
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/relax_start_time"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6:00 AM"
+                    android:textColor="@color/app_blue"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" to "
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/relax_end_time"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6:00 AM"
+                    android:textColor="@color/app_blue"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/app_grey"/>
+
+            <Button
+                android:id="@+id/sign_out_button"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/dimen_10_dp"
+                android:layout_marginRight="@dimen/dimen_10_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:text="Sign out"/>
+
+            <View
+                android:id="@+id/divider_line"
+                android:visibility="gone"
+                android:layout_margin="@dimen/dimen_10_dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/app_grey"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+    -->

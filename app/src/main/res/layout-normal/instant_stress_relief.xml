@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/relativelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mind_gym"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/thirdcard_titleText"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instant relax and relieve"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:layout_marginLeft="@dimen/dimen_40dp"
+            android:id="@+id/thirdcard_sub_titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get positive in 5 minutes"
+            android:textSize="@dimen/dimen_16sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/firstcard_titleText"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:visibility="visible"
+        android:layout_below="@id/image_view"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/instant_relief_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Relax and relieve"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get positive in 5 minutes"
+            android:textSize="18sp"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_margin="@dimen/dimen_10dp"
+            app:cardCornerRadius="@dimen/dimen_5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/cardView1_image"/>
+
+                <TextView
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardview1_textview"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_22sp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview2"
+            android:layout_margin="@dimen/dimen_10dp"
+            app:cardCornerRadius="@dimen/dimen_5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/cardView2_image"/>
+
+                <TextView
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardview2_textview"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_22sp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview3"
+            android:layout_margin="@dimen/dimen_10dp"
+            app:cardCornerRadius="@dimen/dimen_5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/cardView3_image"/>
+
+                <TextView
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardview3_textview"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_22sp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

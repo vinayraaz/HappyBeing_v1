@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/alert_setting"
+            android:icon="@drawable/alert_setting_icon"
+            android:title="Alert setting"
+            />
+        <item
+            android:id="@+id/my_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="My Profile"
+            />
+
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/share_icon"
+            android:title="Share happiness" />
+        <item
+            android:id="@+id/rateus"
+            android:icon="@drawable/rateing_icon"
+            android:title="Rate us" />
+
+        <item
+            android:id="@+id/call"
+            android:icon="@drawable/call_icon"
+            android:title="Call" />
+       <!-- <item
+            android:id="@+id/chatus"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Chat with us" />-->
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/help_icon"
+            android:title="Help" />
+        <item
+            android:id="@+id/get_premium"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Get Premium" />
+    </group>
+
+
+
+</menu>

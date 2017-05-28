@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/relativelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/smiles_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/help_layout"
+        android:layout_toEndOf="@+id/help_layout">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:background="@drawable/profile"/>
+
+        <ImageView
+            android:id="@+id/knowledge_hub"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:background="@drawable/knowledge_hub"/>
+        <ImageView
+            android:id="@+id/help_image"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:background="@drawable/info"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_above="@id/smiles_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_margin="@dimen/dimen_20_dp"
+            android:id="@+id/title_text"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF5722"
+            android:text="Mind gym"
+            android:textSize="20sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_2_dp"
+            android:background="@color/app_grey"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dimen_10_dp"
+            app:cardCornerRadius="@dimen/dimen_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <RelativeLayout
+                android:background="#3f51b5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_alignParentTop="true"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginRight="@dimen/dimen_10_dp"
+                    android:layout_marginTop="@dimen/dimen_10_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Measure your"
+                    android:textColor="@color/white"/>
+
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/test_anxiety_card"
+                        app:cardCornerRadius="@dimen/dimen_5dp"
+                        android:layout_margin="@dimen/dimen_10_dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:background="#90caf9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:id="@+id/test_anxiety_text"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="Test anxiety"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/self_card"
+                        app:cardCornerRadius="@dimen/dimen_5dp"
+                        android:layout_margin="@dimen/dimen_10_dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:background="#90caf9"
+                            android:padding="@dimen/dimen_10_dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Self esteem"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/happiness_card"
+                        app:cardCornerRadius="@dimen/dimen_5dp"
+                        android:layout_margin="@dimen/dimen_10_dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:background="#90caf9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Happiness"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/today_work_out"
+            android:layout_margin="@dimen/dimen_10_dp"
+            android:layout_weight="@integer/int_1"
+            app:cardCornerRadius="@dimen/dimen_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:background="@drawable/mind_gym"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:textSize="@dimen/dimen_22sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Today's workout"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    android:layout_margin="@dimen/dimen_10_dp"
+                    android:id="@+id/name_of_workout"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name of workout"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="10dp"
+            app:cardCornerRadius="@dimen/dimen_5dp"
+            android:layout_weight="@integer/int_1"
+            android:id="@+id/positive_affirmations"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:background="@drawable/quotes_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Positive affirmations"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/help_layout"
+        android:layout_above="@id/smiles_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+        <ImageView
+            android:id="@+id/close_button"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:background="@drawable/close_white"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dp"/>
+
+        <ScrollView
+            android:layout_below="@id/close_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="High Stress, low self-esteem and low happiness levels are the most common aspects detrimental to your wellbeing."
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Take these free assessments to measure your current levels of wellbeing and see positive progress in as short as within 4 weeks using our daily workouts and strengthening activities."
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subscribe today to overcome stress and have lasting positive thoughts throughout the day  while you build resilience and boost happiness."
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nToday's workout"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do your workout at your preferred time. You can modify the time using settings."
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Just like everyday exercising different part of the body help achieve physical health goals, everyday strengthening different aspects of well being like Confidence, Overcoming fear, Deep relaxation, Empathy, Will power etc helps build mind wellness, resilience and thus happiness."
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nPositive affirmations"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Positive affirmations help you overcome negative thoughts and feelings."
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Here's the way, to read  them for optimal outcomes."
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. As you read the affirmation, say it to yourself with belief and conviction even if its not true today."
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Create a mental or visual image of seeing yourself having achieved it from fast or future events."
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Feel the emotion of how good you feel having accomplished this."
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Read each statement thrice for 15 secs."
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

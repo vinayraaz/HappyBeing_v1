@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sunflower_background">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/later_button"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Let's get started"
+            android:background="#cfd8dc"
+            android:textColor="#607d8b"
+            android:textSize="16sp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/awesome_text"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Awesome!"
+        android:textSize="20sp"
+        android:textColor="@color/app_blue"
+        android:layout_above="@+id/buttons_layout"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/options_layout"
+        android:layout_above="@id/awesome_text"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which of these \nbest describes you?"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select at least one option"
+                android:textSize="16sp"/>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/student_layout"
+                    app:cardCornerRadius="@dimen/dimen_2_dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_weight="@integer/int_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/profile_student">
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:id="@+id/student_checkbox_image"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="@dimen/dimen_20dp"
+                                android:layout_height="@dimen/dimen_20dp"
+                                android:background="@drawable/deselect"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/looking_for_job"
+                    app:cardCornerRadius="@dimen/dimen_2_dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_weight="@integer/int_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/profile_looking_for_a_job">
+
+                        <RelativeLayout
+                            android:layout_weight="@integer/int_1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:id="@+id/lookin_for_job_checkbox_image"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="@dimen/dimen_20dp"
+                                android:layout_height="@dimen/dimen_20dp"
+                                android:background="@drawable/deselect"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="@integer/int_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/it_professional_layout"
+                    app:cardCornerRadius="@dimen/dimen_2_dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_weight="@integer/int_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/profile_working_profession">
+
+                        <RelativeLayout
+                            android:layout_weight="@integer/int_1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:id="@+id/it_professional_checkbox_image"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="@dimen/dimen_20dp"
+                                android:layout_height="@dimen/dimen_20dp"
+                                android:background="@drawable/deselect"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/health_care_staffLayout"
+                    app:cardCornerRadius="@dimen/dimen_2_dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_weight="@integer/int_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/profile_health_care_staff">
+                        <RelativeLayout
+                            android:layout_weight="@integer/int_1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:id="@+id/health_care_checkbox_image"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="@dimen/dimen_20dp"
+                                android:layout_height="@dimen/dimen_20dp"
+                                android:background="@drawable/deselect"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/full_time_job_layout"
+                    app:cardCornerRadius="@dimen/dimen_2_dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_weight="@integer/int_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/profile_in_other_full_time_job">
+                        <RelativeLayout
+                            android:layout_weight="@integer/int_1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:id="@+id/full_time_checkbox_image"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="@dimen/dimen_20dp"
+                                android:layout_height="@dimen/dimen_20dp"
+                                android:background="@drawable/deselect"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/homeMaker_layout"
+                    app:cardCornerRadius="@dimen/dimen_2_dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_weight="@integer/int_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/profile_home_maker">
+
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_weight="@integer/int_1"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:id="@+id/home_maker_checkbox_image"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="@dimen/dimen_20dp"
+                                android:layout_height="@dimen/dimen_20dp"
+                                android:background="@drawable/deselect"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="@integer/int_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/want_to_be_mom_layout"
+                    app:cardCornerRadius="@dimen/dimen_2_dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_weight="@integer/int_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/profile_want_to_be_mom">
+                        <RelativeLayout
+                            android:layout_weight="@integer/int_1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:id="@+id/want_to_be_mom_checkbox_image"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="@dimen/dimen_20dp"
+                                android:layout_height="@dimen/dimen_20dp"
+                                android:background="@drawable/deselect"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/expecting_mom_layout"
+                    app:cardCornerRadius="@dimen/dimen_2_dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_weight="@integer/int_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/profile_expecting_mom">
+                        <RelativeLayout
+                            android:layout_weight="@integer/int_1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:id="@+id/expecting_mom_checkbox_image"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="@dimen/dimen_20dp"
+                                android:layout_height="@dimen/dimen_20dp"
+                                android:background="@drawable/deselect"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/senior_citizen_layout"
+                    app:cardCornerRadius="@dimen/dimen_2_dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_weight="@integer/int_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/profile_senior_citizen">
+                        <RelativeLayout
+                            android:layout_weight="@integer/int_1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:id="@+id/senior_citizen_checkbox_image"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="@dimen/dimen_20dp"
+                                android:layout_height="@dimen/dimen_20dp"
+                                android:background="@drawable/deselect"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/care_giver_layout"
+                    app:cardCornerRadius="@dimen/dimen_2_dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_weight="@integer/int_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/profile_looking_after_someone">
+                        <RelativeLayout
+                            android:layout_weight="@integer/int_1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:id="@+id/care_giver_checkbox_image"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="@dimen/dimen_20dp"
+                                android:layout_height="@dimen/dimen_20dp"
+                                android:background="@drawable/deselect"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

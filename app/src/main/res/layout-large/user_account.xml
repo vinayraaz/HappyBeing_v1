@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#EFEFF5">
+
+    <TextView
+        android:padding="15sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My profile"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:background="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2_dp"
+        android:background="@color/app_grey"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <TextView
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            android:id="@+id/user_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:padding="@dimen/dimen_20dp"
+            android:text="Name"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimen_20_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/profile_role_image"
+            android:layout_marginRight="@dimen/dimen_10_dp"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:background="@drawable/student"/>
+        <TextView
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:id="@+id/profile_role_text"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile role"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_22sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="@dimen/dimen_20_dp"
+        android:id="@+id/settings_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_marginRight="@dimen/dimen_10_dp"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:background="@drawable/nav_settings"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_22sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="@dimen/dimen_20_dp"
+        android:id="@+id/feed_back_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dimen_10_dp"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:background="@drawable/nav_feedback"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your feedback"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_22sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How can we make it awesome for you  "
+                android:textSize="@dimen/dimen_18sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/dimen_20_dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:id="@+id/share_app_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_marginRight="@dimen/dimen_10_dp"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:background="@drawable/share"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share happiness"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_22sp"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Grow positivity around you, share the app with family and friends."
+                android:textSize="@dimen/dimen_18sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2_dp"
+        android:background="@color/app_grey"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:id="@+id/signed_out_user_layout"
+                android:paddingTop="@dimen/dimen_20dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="@integer/int_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/app_orange">
+
+                    <Button
+                        android:layout_marginTop="@dimen/dimen_2_dp"
+                        android:id="@+id/sign_in_button"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="Sign in"
+                        android:background="@color/white"
+                        android:textColor="@color/app_orange"
+                        android:textSize="@dimen/dimen_22sp"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:paddingTop="@dimen/dimen_20dp"
+                    android:paddingBottom="@dimen/dimen_20dp"
+                    android:id="@+id/sign_up_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Sign up"
+                    android:background="@color/app_orange"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_22sp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="gone"
+                android:paddingTop="@dimen/dimen_20dp"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="@dimen/dimen_10_dp"
+                android:paddingRight="@dimen/dimen_10_dp"
+                android:background="@color/app_orange"
+                android:layout_alignParentRight="true"
+                android:id="@+id/buy_now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GET PREMIUM ACCESS"/>
+        </RelativeLayout>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/payment_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_18sp"
+            android:text="Get access to all our awesome content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="82dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

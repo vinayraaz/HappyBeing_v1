@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Title:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+            <EditText
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:id="@+id/title_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:textSize="18sp"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Acheive by"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight=".4"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"/>
+
+                    <TextView
+                        android:id="@+id/date1"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:background="@android:drawable/screen_background_light_transparent"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20sp"
+                    android:layout_weight=".4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time"/>
+
+                    <TextView
+                        android:id="@+id/time1"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:background="@android:drawable/screen_background_light_transparent"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Define your goal:"
+                android:textColor="@color/black"/>
+            <EditText
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:id="@+id/define_goal_textview"
+                android:textColor="@color/black"
+                android:background="@android:drawable/editbox_background_normal"/>
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingLeft="5dp"
+                android:text="Benefits for you in achieving this goal:"/>
+            <EditText
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/benifits_goal_textview"
+                android:textColor="@color/black"
+                android:paddingLeft="5dp"
+                android:background="@android:drawable/editbox_background_normal"/>
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Steps to acheive:"/>
+            <EditText
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/steps_to_acheive_textview"
+                android:textColor="@color/black"
+                android:background="@android:drawable/editbox_background_normal"/>
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:text="List the compromises I am ready to make to achieve this goal:"/>
+            <EditText
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:id="@+id/compromises_made_textview"
+                android:textColor="@color/black"
+                android:background="@android:drawable/editbox_background_normal"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="List any compromises am not ready to make"/>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/compromises_not_made_textview"
+                android:textColor="@color/black"
+                android:background="@android:drawable/editbox_background_normal"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:text="Define your master mind team:" />
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:id="@+id/team_members_textview"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:background="@android:drawable/editbox_background_normal"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
